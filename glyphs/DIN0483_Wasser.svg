@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 50 50.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="DIN0483_Wasser.svg"
+   inkscape:export-filename="P:\Files\Axialis\Library\Baldwin\Inkscape-png-export\DIN0276_Dampf_Energie.png"
+   inkscape:export-xdpi="92.160004"
+   inkscape:export-ydpi="92.160004">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.7209677"
+     inkscape:cx="21.000574"
+     inkscape:cy="22.706194"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="true"
+     inkscape:window-width="1084"
+     inkscape:window-height="867"
+     inkscape:window-x="56"
+     inkscape:window-y="47"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10233" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1002.3622)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 14.189453,1024.4139 c 0,6e-4 0,0 0,0 0,1.7369 -1.162529,3.244 -2.841797,3.6875 l 0.533203,2.0097 c 1.4049,-0.3709 2.566038,-1.243 3.345703,-2.3828 0.490764,0.7196 1.131289,1.3413 1.910157,1.791 1.822587,1.0523 4.073827,1.0522 5.896484,0 0.776929,-0.4485 1.417893,-1.0665 1.908203,-1.7832 0.490127,0.7162 1.130293,1.3352 1.90625,1.7832 1.822586,1.0523 4.071874,1.0522 5.894532,0 0.780191,-0.4504 1.423042,-1.0723 1.914062,-1.7929 0.815663,1.1917 2.046269,2.0906 3.529297,2.4316 l 0.466797,-2.0273 c -1.737405,-0.3996 -2.960152,-1.9362 -2.960938,-3.7188 h -2.082031 c 0,0 0,0 0,0 0,1.3646 -0.724504,2.6206 -1.90625,3.3028 -1.181747,0.6823 -2.632754,0.6823 -3.814453,0 -1.181131,-0.6821 -1.907597,-1.939 -1.908203,-3.3028 -1e-6,-6e-4 0,-0 0,-0 h -2.080078 c 0,7e-4 -10e-7,0 0,0 0,1.3646 -0.726458,2.6206 -1.908203,3.3028 -1.181747,0.6823 -2.632755,0.6823 -3.814454,0 -1.181131,-0.6821 -1.905644,-1.939 -1.90625,-3.3028 0,-6e-4 0,-0 0,-0 z"
+       id="path7367"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

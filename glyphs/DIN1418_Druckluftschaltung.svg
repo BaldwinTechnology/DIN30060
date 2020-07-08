@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 50 50.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="DIN1418_Druckluftschaltung.svg"
+   inkscape:export-filename="P:\Files\Axialis\Library\Baldwin\Inkscape-png-export\DIN0120_Ausgang.png"
+   inkscape:export-xdpi="92.160004"
+   inkscape:export-ydpi="92.160004">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.747524"
+     inkscape:cx="7.5419211"
+     inkscape:cy="21.859586"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10233" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1002.3622)">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 25,1010.9863 c -1.285706,0 -2.642825,0.5254 -3.748047,1.3496 -1.105222,0.8242 -2.001953,1.9976 -2.001953,3.4004 v 22 c 0,0.6875 0.290169,1.2845 0.673828,1.6895 0.383659,0.405 0.83542,0.655 1.240234,0.8574 0.404815,0.2024 0.775847,0.3617 0.976563,0.4844 0.07227,0.044 0.08874,0.064 0.109375,0.082 v 2.8867 h 1.5 v -3 c 0,-0.3125 -0.136611,-0.6112 -0.300781,-0.8105 -0.164171,-0.1994 -0.346452,-0.327 -0.527344,-0.4375 -0.361784,-0.2211 -0.740752,-0.3743 -1.085937,-0.5469 -0.345186,-0.1726 -0.643425,-0.36 -0.822266,-0.5488 -0.178841,-0.1888 -0.263672,-0.3438 -0.263672,-0.6563 v -22 c 0,-0.7315 0.537253,-1.557 1.398438,-2.1992 0.861184,-0.6422 2.002893,-1.0508 2.851562,-1.0508 0.848669,0 1.990378,0.4086 2.851562,1.0508 0.861185,0.6422 1.398438,1.4677 1.398438,2.1992 v 22 c 0,0.3125 -0.08483,0.4675 -0.263672,0.6563 -0.178841,0.1888 -0.47708,0.3762 -0.822266,0.5488 -0.345185,0.1726 -0.724153,0.3258 -1.085937,0.5469 -0.180892,0.1105 -0.363173,0.2381 -0.527344,0.4375 -0.16417,0.1993 -0.300781,0.498 -0.300781,0.8105 v 3 h 1.5 v -2.8867 c 0.02064,-0.018 0.0371,-0.038 0.109375,-0.082 0.200716,-0.1227 0.571748,-0.282 0.976563,-0.4844 0.404814,-0.2024 0.856575,-0.4524 1.240234,-0.8574 0.383659,-0.405 0.673828,-1.002 0.673828,-1.6895 v -22 c 0,-1.4028 -0.896731,-2.5762 -2.001953,-3.4004 -1.105222,-0.8242 -2.462341,-1.3496 -3.748047,-1.3496 z"
+       id="path5102"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

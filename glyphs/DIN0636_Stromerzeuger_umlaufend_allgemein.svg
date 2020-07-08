@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 50 50.000001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="DIN0636_Stromerzeuger_umlaufend_allgemein.svg"
+   inkscape:export-filename="P:\Files\Axialis\Library\Baldwin\Inkscape-png-export\DIN0636_Stromerzeuger_umlaufend_allgemein.png"
+   inkscape:export-xdpi="92.160004"
+   inkscape:export-ydpi="92.160004">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.7209677"
+     inkscape:cx="17.982605"
+     inkscape:cy="22.706194"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1028"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10233" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1002.3622)">
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3336"
+       cx="25"
+       cy="1027.3622"
+       inkscape:export-filename="P:\path3336.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       r="14.995" />
+    <g
+       aria-label="G"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.04738617px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text5062">
+      <path
+         d="m 25.020554,1028.7599 v -2.1479 h 5.323509 v 3.0522 q 0,2.2302 -1.551834,3.7717 -1.551834,1.5416 -3.792229,1.5416 -1.767652,0 -2.970066,-0.8427 -1.192137,-0.853 -1.716266,-1.8396 -0.369974,-0.6578 -0.513852,-1.4388 -0.143879,-0.7811 -0.143879,-3.4839 0,-2.7029 0.143879,-3.484 0.143878,-0.781 0.513852,-1.4387 0.524129,-0.9764 1.716266,-1.8396 1.202414,-0.8633 2.970066,-0.8633 2.127348,0 3.514749,1.3155 1.397678,1.3051 1.747097,3.1242 h -2.394551 q -0.27748,-0.8633 -1.037981,-1.5107 -0.750225,-0.6475 -1.829314,-0.6475 -0.80161,0 -1.387401,0.3289 -0.585792,0.3288 -0.924934,0.7605 -0.441913,0.5755 -0.606346,1.264 -0.154155,0.6886 -0.154155,2.9907 0,2.3123 0.154155,3.0009 0.164433,0.6885 0.606346,1.2435 0.339142,0.4522 0.924934,0.781 0.585791,0.3186 1.387401,0.3186 1.294907,0 2.178733,-0.8838 0.894103,-0.8838 0.894103,-2.3021 v -0.7707 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Mittelschrift';-inkscape-font-specification:'DIN 1451 Mittelschrift';stroke-width:1px"
+         id="path4494"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
