@@ -10,7 +10,7 @@ fontname = "DIN30600"
 fullname = "DIN 30600 graphical symbols"
 familyname = "DIN 30600"
 version = "v1.1"
-copyright = "Copyright (c) 2010, Baldi, Reserved Font Name \"DIN 30600\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is available with a FAQ at: http://scripts.sil.org/OFL"
+copyright = "Copyright (c) 2020, Baldi, Reserved Font Name \"DIN 30600\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is available with a FAQ at: http://scripts.sil.org/OFL"
 
 def getGlyphWidth(glyph):
     "determine width of a given glyph"
@@ -322,15 +322,22 @@ addIcon(regular, 2201, "glyphs/DIN2201_Nicht_betaetigen_nicht_eingreifen.svg")
 
 addIcon(regular, 2301, "glyphs/DIN2301_Programm_ohne_Maschinen_Funktionen.svg")
 addIcon(regular, 2302, "glyphs/DIN2302_Programm_mit_Maschinen_Funktionen.svg")
+addIcon(regular, 2303, "glyphs/DIN2303_Bezugspunkt.svg")
 addIcon(regular, 2307, "glyphs/DIN2307_Programm_einlesen_ohne_Maschinen_Funktionen.svg")
 addIcon(regular, 2308, "glyphs/DIN2308_Programm_einlesen_mit_Maschinen_Funktionen.svg")
 addIcon(regular, 2309, "glyphs/DIN2309_Satzweises_Einlesen_ohne_Maschinen_Funktionen.svg")
 addIcon(regular, 2310, "glyphs/DIN2310_Satzweises_Einlesen_mit_Maschinen_Funktionen.svg")
 addIcon(regular, 2315, "glyphs/DIN2315_Suchlauf_vorwaerts.svg")
 addIcon(regular, 2316, "glyphs/DIN2316_Suchlauf_rueckwaerts.svg")
+addIcon(regular, 2335, "glyphs/DIN2335_Absolute_Massangabe.svg")
+addIcon(regular, 2336, "glyphs/DIN2336_Relative_Massangabe.svg")
 addIcon(regular, 2337, "glyphs/DIN2337_Referenzpunkt.svg")
 addIcon(regular, 2338, "glyphs/DIN2338_Gitterpunkt.svg")
 addIcon(regular, 2339, "glyphs/DIN2339_Koordinaten_Nullpunkt.svg")
+addIcon(regular, 2345, "glyphs/DIN2345_Nullpunkt_Korrektur.svg")
+addIcon(regular, 2346, "glyphs/DIN2346_Positioniergenaugikeit_fein.svg")
+addIcon(regular, 2347, "glyphs/DIN2347_Positioniergenaugikeit_mittel.svg")
+addIcon(regular, 2348, "glyphs/DIN2348_Positioniergenauigkeit_grob.svg")
 addIcon(regular, 2362, "glyphs/DIN2362_Position.svg")
 addIcon(regular, 2367, "glyphs/DIN2367_Bereit_fertig.svg")
 addIcon(regular, 2371, "glyphs/DIN2371_Nicht_bereit.svg")

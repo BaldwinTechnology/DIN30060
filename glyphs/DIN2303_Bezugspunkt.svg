@@ -15,8 +15,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="DIN2339_Koordinaten_Nullpunkt.svg"
-   inkscape:export-filename="P:\Files\Axialis\Library\Baldwin\Inkscape-png-export\DIN2339_Koordinaten-Nullpunkt.png"
+   sodipodi:docname="DIN2303_Bezugspunkt.svg"
+   inkscape:export-filename="P:\Files\Axialis\Library\Baldwin\Inkscape-png-export\DIN2303_Bezugspunkt.png"
    inkscape:export-xdpi="92.160004"
    inkscape:export-ydpi="92.160004">
   <defs
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="9.7209677"
-     inkscape:cx="-10.791439"
+     inkscape:cx="-15.225672"
      inkscape:cy="25.846206"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -66,7 +66,7 @@
      transform="translate(0,-1002.3622)">
     <path
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 16.878906,10.621094 v 15.265625 c -3.492797,0.257748 -6.257812,3.176866 -6.257812,6.734375 0,3.7264 3.031395,6.757812 6.757812,6.757812 3.557516,0 6.474662,-2.765041 6.732422,-6.257812 h 15.267578 v -1 H 24.111328 C 23.86645,28.793488 21.206343,26.132264 17.878906,25.886719 V 10.621094 Z m 0,16.267578 v 2.154297 c -1.595211,0.22396 -2.852758,1.48278 -3.076172,3.078125 h -2.15625 c 0.238736,-2.785292 2.447146,-4.99369 5.232422,-5.232422 z m 1,0 c 2.785276,0.238732 4.993687,2.44713 5.232422,5.232422 h -2.15625 c -0.223414,-1.595345 -1.480961,-2.854165 -3.076172,-3.078125 z m 0,3.154297 c 1.053252,0.201137 1.876982,1.024888 2.078125,2.078125 h -2.078125 z m -6.232422,3.078125 h 2.15625 c 0.223922,1.595025 1.481426,2.853955 3.076172,3.078125 v 2.152343 c -2.784721,-0.238693 -4.992959,-2.445955 -5.232422,-5.230468 z m 3.154297,0 h 2.078125 v 2.078125 c -1.053247,-0.201457 -1.876982,-1.024574 -2.078125,-2.078125 z m 3.078125,0 h 2.078125 c -0.201142,1.053551 -1.024877,1.876668 -2.078125,2.078125 z m 3.076172,0 h 2.15625 c -0.239463,2.784513 -2.447701,4.991775 -5.232422,5.230468 v -2.152343 c 1.594747,-0.22417 2.85225,-1.4831 3.076172,-3.078125 z"
+       d="m 16.878906,10.621094 v 15.265625 c -3.492797,0.257748 -6.257812,3.176866 -6.257812,6.734375 0,3.7264 3.031395,6.757812 6.757812,6.757812 3.557516,0 6.474662,-2.765041 6.732422,-6.257812 h 15.267578 v -1 H 24.111328 C 23.86645,28.793488 21.206343,26.132264 17.878906,25.886719 V 10.621094 Z m 0,16.267578 v 5.232422 h -5.232422 c 0.238736,-2.785292 2.447146,-4.99369 5.232422,-5.232422 z m 1,0 c 2.785276,0.238732 4.993687,2.44713 5.232422,5.232422 h -5.232422 z m -6.232422,6.232422 h 5.232422 v 5.230468 c -2.784721,-0.238693 -4.992959,-2.445955 -5.232422,-5.230468 z m 6.232422,0 h 5.232422 c -0.239463,2.784513 -2.447701,4.991775 -5.232422,5.230468 z"
        transform="translate(0,1002.3622)"
        id="path10084-9"
        inkscape:connector-curvature="0" />
