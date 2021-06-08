@@ -22,10 +22,24 @@ def getGlyphHeight(glyph):
     box = glyph.boundingBox()
     return box[3] - box[1]
 
-def addIcon( font, glyph, svgFileName ):
+def addIcon( font, glyph, svgFileName, name="" ):
     "add a svg as icon glyph"
     glyph = font.createChar(glyph)
     glyph.importOutlines(svgFileName)
+
+    if name == '':
+        text = svgFileName[:-4]
+
+        # "glyphs/DIN0003_Lesen_oder_Wiedergabe_von_einem_Informationstraeger.svg
+        #  1...5...10....5...20
+        text = text[15:] # alles, bis auf die ersten 15 Zeichen
+        text = text.replace("_", " ")
+
+        name = text
+        #print (name)
+    glyph.glyphname = name
+    glyph.comment = name
+
     glyph.correctDirection()
     return;
 
@@ -96,7 +110,7 @@ regular.copyright = copyright
 # add symbols
 # addIcon   (regular, ord('4'), "glyphs/d10.svg") // example
 
-addIcon(regular,    3, "glyphs/DIN0003_Lesen_oder_Wiedergabe_von_einem_Informationstraeger.svg")
+addIcon(regular,    3, "glyphs/DIN0003_Lesen_oder_Wiedergabe_von_einem_Informationstraeger.svg", "Lesen oder Wiedergabe von einem Informationsträger")
 addIcon(regular,    4, "glyphs/DIN0004_Loeschen_einer_Information_von_einem_Informationstraeger.svg")
 addIcon(regular,    9, "glyphs/DIN0009_Steuern.svg")
 addIcon(regular,   10, "glyphs/DIN0010_Regeln.svg")
