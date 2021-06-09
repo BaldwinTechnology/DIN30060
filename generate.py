@@ -422,6 +422,9 @@ addIcon(regular, 2963, "glyphs/DIN2963_Dispersant_nachfuellen.svg")
 addIcon(regular, 2964, "glyphs/DIN2964_Entwickler_nachfuellen_gebrauchsfertig.svg")
 addIcon(regular, 2965, "glyphs/DIN2965_Wasser_nachfuellen.svg")
 
+addIcon(regular, 2979, "glyphs/DIN2979_Blatt_Seite_markieren.svg", "Blatt/Seite markieren")
+addIcon(regular, 2980, "glyphs/DIN2980_Blatt_Seite_wieder aufrufen_Markierte_Seite_wieder_aufrufen.svg", "Blatt/Seite wieder aufrufen; Markierte Seite wieder aufrufen")
+
 addIcon(regular, 2993, "glyphs/DIN2993_Recovery_Recycling_allgemein.svg")
 addIcon(regular, 3103, "glyphs/DIN3103_Rotationsbuerste.svg")
 addIcon(regular, 3271, "glyphs/DIN3271_Ruecksetzen_in_den_Ausgangszustand.svg")
