@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# simple .svg to .ttf icon font converter, (c) 2020 Baldi
+# simple .svg to .ttf icon font converter, (c) 2020–2021 Baldi
 
 # generate.py file taken from nipajin-dingbats
 
@@ -10,17 +10,7 @@ fontname = "DIN30600"
 fullname = "DIN 30600 graphical symbols"
 familyname = "DIN 30600"
 version = "v1.1"
-copyright = "Copyright (c) 2020, Baldi, Reserved Font Name \"DIN 30600\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is available with a FAQ at: http://scripts.sil.org/OFL"
-
-def getGlyphWidth(glyph):
-    "determine width of a given glyph"
-    box = glyph.boundingBox()
-    return box[2] - box[0]
-
-def getGlyphHeight(glyph):
-    "determine height of a given glyph"
-    box = glyph.boundingBox()
-    return box[3] - box[1]
+copyright = "Copyright (c) 2020–2021, Baldi, Reserved Font Name \"DIN 30600\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is available with a FAQ at: http://scripts.sil.org/OFL"
 
 def addIcon( font, glyph, svgFileName, name="" ):
     "add a svg as icon glyph"
@@ -28,11 +18,10 @@ def addIcon( font, glyph, svgFileName, name="" ):
     glyph.importOutlines(svgFileName)
 
     if name == '':
-        text = svgFileName[:-4]
-
         # "glyphs/DIN0003_Lesen_oder_Wiedergabe_von_einem_Informationstraeger.svg
         #  1...5...10....5...20
-        text = text[15:] # alles, bis auf die ersten 15 Zeichen
+        text = svgFileName[:-4] # remove '.svg'
+        text = text[15:] # remove the first 15 characters
         text = text.replace("_", " ")
 
         name = text
@@ -43,50 +32,8 @@ def addIcon( font, glyph, svgFileName, name="" ):
     glyph.correctDirection()
     return;
 
-def addDie( font, glyph, svgFileName, yOffset = 0 ):
-    "add a svg as glyph (with a box)"
-    scale = 0.75
-    glyph = font.createChar(glyph)
-
-    # get and store true width for later, as it will get distorted
-    glyph.importOutlines("glyphs/_box.svg")
-    width = glyph.width
-    glyph.clear()
-
-    # put icon in a die/box
-    glyph.importOutlines(svgFileName)
-    glyph.transform(psMat.scale(scale))
-    glyph.transform(psMat.translate(1000 * (1 - scale) / 2, yOffset + 1000 * (1 - scale) / 2 - 200 * (1 - scale)))
-    glyph.importOutlines("glyphs/_box.svg")
-    glyph.correctDirection()
-
-    glyph.width = width
-    return;
-
-def addCircle( font, glyph, svgFileName, yOffset = 0 ):
-    "add a svg as glyph (with a circle)"
-    scale = 0.75
-    glyph = font.createChar(glyph)
-
-    # get and store true width for later, as it will get distorted
-    glyph.importOutlines("glyphs/_circle.svg")
-    width = glyph.width
-    glyph.clear()
-
-    # put icon in a die/box
-    glyph.importOutlines(svgFileName)
-    glyph.transform(psMat.scale(scale))
-    glyph.transform(psMat.translate(1000 * (1 - scale) / 2, yOffset + 1000 * (1 - scale) / 2 - 200 * (1 - scale)))
-    glyph.importOutlines("glyphs/_circle.svg")
-    glyph.correctDirection()
-
-    glyph.width = width
-    return;
-
 # start with a new font
 regular = fontforge.font()  # shape only
-# bold    = fontforge.font()  # box shapes
-# italic  = fontforge.font()  # circle shapes
 
 # add some meta-data
 regular.fontname = fontname + "-Regular"
@@ -95,93 +42,85 @@ regular.familyname = familyname
 regular.version = version
 regular.copyright = copyright
 
-# bold.fontname = fontname + "-Bold"
-# bold.fullname = fullname + " Bold"
-# bold.familyname = familyname
-# bold.version = version
-# bold.copyright = copyright
-
-# italic.fontname = fontname + "-Italic"
-# italic.fullname = fullname + " Italic"
-# italic.familyname = familyname
-# italic.version = version
-# italic.copyright = copyright
 
 # add symbols
 # addIcon   (regular, ord('4'), "glyphs/d10.svg") // example
 
+#Page 07
 addIcon(regular,    3, "glyphs/DIN0003_Lesen_oder_Wiedergabe_von_einem_Informationstraeger.svg", "Lesen oder Wiedergabe von einem Informationsträger")
 addIcon(regular,    4, "glyphs/DIN0004_Loeschen_einer_Information_von_einem_Informationstraeger.svg")
 addIcon(regular,    9, "glyphs/DIN0009_Steuern.svg")
 addIcon(regular,   10, "glyphs/DIN0010_Regeln.svg")
-addIcon(regular,   11, "glyphs/DIN0011_Start_eines_Vorganges.svg")
+addIcon(regular,   11, "glyphs/DIN0011_Start_eines_Vorganges.svg", "Start (eines Vorganges")
 addIcon(regular,   12, "glyphs/DIN0012_Schnellstart.svg")
-addIcon(regular,   13, "glyphs/DIN0013_Stop_eines_Vorganges_Abbrechen.svg")
+addIcon(regular,   13, "glyphs/DIN0013_Stop_eines_Vorganges_Abbrechen.svg", "Stop (eines Vorganges); Abbrechen")
 addIcon(regular,   14, "glyphs/DIN0014_Schnellstop.svg")
-addIcon(regular,   15, "glyphs/DIN0015_Aus_Ausschalten_oder_Ausgeschaltet.svg")
-addIcon(regular,   16, "glyphs/DIN0016_Ein_Einschalten_oder_Eingeschaltet.svg")
-addIcon(regular,   17, "glyphs/DIN0017_Bereit.svg")
-addIcon(regular,   18, "glyphs/DIN0018_Ein_Aus_Drucktaste_mit_zwei_festen_Stellungen.svg")
-addIcon(regular,   19, "glyphs/DIN0019_Ein_Aus_Drucktaster.svg")
+addIcon(regular,   15, "glyphs/DIN0015_Aus_Ausschalten_oder_Ausgeschaltet.svg", "Aus (Ausschalten oder Ausgeschaltet)")
+addIcon(regular,   16, "glyphs/DIN0016_Ein_Einschalten_oder_Eingeschaltet.svg", "Ein (Einschalten oder Eingeschaltet)")
+addIcon(regular,   17, "glyphs/DIN0017_Bereit.svg", "Bereitschaftsstellung")
+addIcon(regular,   18, "glyphs/DIN0018_Ein_Aus_Drucktaste_mit_zwei_festen_Stellungen.svg", "Ein/Aus-Drucktaste mit zwei festen Stellungen")
+addIcon(regular,   19, "glyphs/DIN0019_Ein_Aus_Drucktaster.svg", "Ein/Aus (Drucktaster)")
 addIcon(regular,   20, "glyphs/DIN0020_Abschalten.svg")
 addIcon(regular,   21, "glyphs/DIN0021_Zuschalten.svg")
 addIcon(regular,   22, "glyphs/DIN0022_Bereitschaftsstellung_fuer_einen_Teil_des_Betriebsmittels.svg")
-addIcon(regular,   23, "glyphs/DIN0023_Veraendern_einer_Groesse.svg")
+addIcon(regular,   23, "glyphs/DIN0023_Veraendern_einer_Groesse.svg", "Verändern einer Größe")
 addIcon(regular,   24, "glyphs/DIN0024_Maximaleinstellung.svg")
 addIcon(regular,   25, "glyphs/DIN0025_Minimumeinstellung.svg")
-addIcon(regular,   26, "glyphs/DIN0026_Eichen_Kalibrieren.svg")
-addIcon(regular,   27, "glyphs/DIN0027_Aufnahme_auf_einen_Informationstraeger.svg")
+addIcon(regular,   26, "glyphs/DIN0026_Eichen_Kalibrieren.svg", "Eichen; Kalibrieren")
+addIcon(regular,   27, "glyphs/DIN0027_Aufnahme_auf_einen_Informationstraeger.svg", "Aufnahme auf einen Informationsträger")
 addIcon(regular,   28, "glyphs/DIN0028_Bewegung_in_eine_Richtung.svg")
-addIcon(regular,   29, "glyphs/DIN0029_Rueckuebertragung.svg")
+addIcon(regular,   29, "glyphs/DIN0029_Rueckuebertragung.svg", "Rückübertragung")
 addIcon(regular,   30, "glyphs/DIN0030_Nichtrechnen.svg")
 addIcon(regular,   31, "glyphs/DIN0031_Zwischenresultat.svg")
 addIcon(regular,   32, "glyphs/DIN0032_Resultat.svg")
-addIcon(regular,   35, "glyphs/DIN0035_Handbetaetigung.svg")
+addIcon(regular,   35, "glyphs/DIN0035_Handbetaetigung.svg", "Handbetätigung")
 addIcon(regular,   42, "glyphs/DIN0042_Elektrische_Maschine.svg")
 addIcon(regular,   45, "glyphs/DIN0045_Entriegeln.svg")
 addIcon(regular,   46, "glyphs/DIN0046_Verriegeln.svg")
 addIcon(regular,   47, "glyphs/DIN0047_Zentrale_Schaltstelle.svg")
 addIcon(regular,   56, "glyphs/DIN0056_Mittelstellung.svg")
-addIcon(regular,   80, "glyphs/DIN0080_Zulaessige_Uebertemperatur.svg")
-addIcon(regular,   82, "glyphs/DIN0082_Maschineninterne_Uebertragung_von_Daten.svg")
-addIcon(regular,   84, "glyphs/DIN0084_Konstanten_Eingabe.svg")
-addIcon(regular,   85, "glyphs/DIN0085_Konstanten_Abruf.svg")
-addIcon(regular,   86, "glyphs/DIN0086_Gesamtloeschen_Gesamt_Nullstellen.svg")
+addIcon(regular,   80, "glyphs/DIN0080_Zulaessige_Uebertemperatur.svg", "Zulässige Übertemperatur")
+addIcon(regular,   82, "glyphs/DIN0082_Maschineninterne_Uebertragung_von_Daten.svg", "Maschineninterne Übertragung von Daten")
+addIcon(regular,   84, "glyphs/DIN0084_Konstanten_Eingabe.svg", "Konstanten-Eingabe")
+addIcon(regular,   85, "glyphs/DIN0085_Konstanten_Abruf.svg", "Konstanten-Abruf")
+addIcon(regular,   86, "glyphs/DIN0086_Gesamtloeschen_Gesamt_Nullstellen.svg", "Gesamtlöschen; gesamt-Nullstellen")
 addIcon(regular,   88, "glyphs/DIN0088_Maschinelles_Runden.svg")
 addIcon(regular,   89, "glyphs/DIN0089_Schnelle_Bewegung_in_eine_Begrenzung.svg")
 addIcon(regular,   90, "glyphs/DIN0090_Schnelle_Bewegung_aus_einer_Begrenzung.svg")
 addIcon(regular,  100, "glyphs/DIN0100_Drehbewegung_nach_rechts.svg")
+#Page 09
 addIcon(regular,  101, "glyphs/DIN0101_Entfernungsringe.svg")
 addIcon(regular,  102, "glyphs/DIN0102_Peilzeigereinstellung.svg")
-addIcon(regular,  105, "glyphs/DIN0105_Taster_handbetaetigt.svg")
-addIcon(regular,  111, "glyphs/DIN0111_Impulsmarkierung_auf_Informationstraeger.svg")
+addIcon(regular,  105, "glyphs/DIN0105_Taster_handbetaetigt.svg", "Taster, handbetätigt")
+addIcon(regular,  111, "glyphs/DIN0111_Impulsmarkierung_auf_Informationstraeger.svg", "Impulsmarkierung auf Informationsträger")
 addIcon(regular,  112, "glyphs/DIN0112_Trennschnitt.svg")
-addIcon(regular,  113, "glyphs/DIN0113_Pause_Unterbrechung.svg")
+addIcon(regular,  113, "glyphs/DIN0113_Pause_Unterbrechung.svg", "Pause; Unterbrechung")
 addIcon(regular,  114, "glyphs/DIN0114_Drehbewegung_nach_links.svg")
-addIcon(regular,  115, "glyphs/DIN0115_Signaluebergabe.svg")
-addIcon(regular,  119, "glyphs/DIN0119_Eingang.svg")
-addIcon(regular,  120, "glyphs/DIN0120_Ausgang.svg")
-addIcon(regular,  127, "glyphs/DIN0127_Ventilation_Lueftung.svg")
+addIcon(regular,  115, "glyphs/DIN0115_Signaluebergabe.svg", "Signalübergabe")
+addIcon(regular,  119, "glyphs/DIN0119_Eingang.svg", "Eingang (für Energie und Signale)")
+addIcon(regular,  120, "glyphs/DIN0120_Ausgang.svg", "Ausgang (für Energie und Signale)")
+addIcon(regular,  127, "glyphs/DIN0127_Ventilation_Lueftung.svg", "Ventilation; Lüftung")
 addIcon(regular,  129, "glyphs/DIN0129_Hinweispfeil.svg")
-addIcon(regular,  131, "glyphs/DIN0131_Gefaehrliche_elektrische_Spannung.svg")
-addIcon(regular,  132, "glyphs/DIN0132_Waermeabgabe_durch_Strahlung.svg")
-addIcon(regular,  133, "glyphs/DIN0133_Waermeabgabe_durch_Konvektion.svg")
-addIcon(regular,  139, "glyphs/DIN0139_Lampe_Licht_Beleuchtung.svg")
-addIcon(regular,  153, "glyphs/DIN0153_Leuchtmelder_Signalleuchte.svg")
-addIcon(regular,  164, "glyphs/DIN0164_Zaehlen.svg")
+addIcon(regular,  131, "glyphs/DIN0131_Gefaehrliche_elektrische_Spannung.svg", "Gefährliche elektrische Spannung")
+addIcon(regular,  132, "glyphs/DIN0132_Waermeabgabe_durch_Strahlung.svg", "Wärmeabgabe durch Strahlung")
+addIcon(regular,  133, "glyphs/DIN0133_Waermeabgabe_durch_Konvektion.svg", "Wärmeabgabe duch Konvektion")
+addIcon(regular,  139, "glyphs/DIN0139_Lampe_Licht_Beleuchtung.svg", "Lampe; Licht; Beleuchtung")
+addIcon(regular,  153, "glyphs/DIN0153_Leuchtmelder_Signalleuchte.svg", "Leuchtmelder; Signalleuchte")
+addIcon(regular,  164, "glyphs/DIN0164_Zaehlen.svg", "Zählen")
 addIcon(regular,  165, "glyphs/DIN0165_Messen.svg")
-addIcon(regular,  166, "glyphs/DIN0166_Pruefen.svg")
-addIcon(regular,  167, "glyphs/DIN0167_Kupplung_allgemein.svg")
-addIcon(regular,  168, "glyphs/DIN0168_Drehen_Umdrehung_Drehzahl_Gantrydrehung.svg")
+addIcon(regular,  166, "glyphs/DIN0166_Pruefen.svg", "Prüfen")
+addIcon(regular,  167, "glyphs/DIN0167_Kupplung_allgemein.svg", "Kupplung, allgemein")
+addIcon(regular,  168, "glyphs/DIN0168_Drehen_Umdrehung_Drehzahl_Gantrydrehung.svg", "Drehen; Umdrehung; Drehzahl; Gantrydrehung")
 addIcon(regular,  169, "glyphs/DIN0169_Gleichzeitige_Bewegung_in_entgegengesetzter_Richtung_aus_zwei_Begrenzungen_heraus.svg")
 addIcon(regular,  170, "glyphs/DIN0170_Thermometer.svg")
 addIcon(regular,  171, "glyphs/DIN0171_Temperaturabnahme.svg")
 addIcon(regular,  172, "glyphs/DIN0172_Temperaturzunahme.svg")
-addIcon(regular,  173, "glyphs/DIN0173_Uhr_Zeitschalter_Zeitgeber.svg")
-addIcon(regular,  174, "glyphs/DIN0174_Getriebe_allgemein.svg")
+addIcon(regular,  173, "glyphs/DIN0173_Uhr_Zeitschalter_Zeitgeber.svg", "Uhr; Zeitschalter; Zeitgeber")
+addIcon(regular,  174, "glyphs/DIN0174_Getriebe_allgemein.svg", "Getriebe, allgemein")
 addIcon(regular,  176, "glyphs/DIN0176_Drehbewegung_in_zwei_Richtungen.svg")
 addIcon(regular,  197, "glyphs/DIN0197_Temperatur_Begrenzer.svg", "Temperatur-Begrenzer")
-addIcon(regular,  200, "glyphs/DIN0200_Stoerung.svg")
+addIcon(regular,  200, "glyphs/DIN0200_Stoerung.svg", "Störung")
+#Page 11
 addIcon(regular,  201, "glyphs/DIN0201_Begrenzer.svg")
 addIcon(regular,  214, "glyphs/DIN0214_Bewegung_in_Pfeilrichtung_begrenzt.svg")
 addIcon(regular,  217, "glyphs/DIN0217_Einmalige_Umdrehung.svg")
