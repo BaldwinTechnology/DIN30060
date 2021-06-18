@@ -397,6 +397,8 @@ addIcon(regular, 3239, "glyphs/DIN3239_Menue_aufrufen.svg", "Menü aufrufen")
 addIcon(regular, 3269, "glyphs/DIN3269_Mischen.svg")
 addIcon(regular, 3271, "glyphs/DIN3271_Ruecksetzen_in_den_Ausgangszustand.svg", "Rücksetzen in den Ausgangszustand")
 addIcon(regular, 3272, "glyphs/DIN3272_Annullierung_vollstaendig.svg", "Annullierung, vollständig")
+addIcon(regular, 3280, "glyphs/DIN3280_Einstellen_der_Basislinie_auf_vorgegebenen_Wert.svg")
+addIcon(regular, 3296, "glyphs/DIN3296_Bewegung_handbetaetigt.svg", "Bewegung, handbetätigt")
 #Page 73
 addIcon(regular, 3328, "glyphs/DIN3328_Elektronische_Berechtigung.svg")
 addIcon(regular, 3330, "glyphs/DIN3330_Information.svg")
