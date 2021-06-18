@@ -390,7 +390,13 @@ addIcon(regular, 2993, "glyphs/DIN2993_Recovery_Recycling_allgemein.svg", "Recov
 #Page 69
 addIcon(regular, 3103, "glyphs/DIN3103_Rotationsbuerste.svg", "Rotationsbürste")
 #Page 71
+addIcon(regular, 3245, "glyphs/DIN3245_Grenzwerte_allgemein.svg", "Grenzwerte, allgemein")
+addIcon(regular, 3246, "glyphs/DIN3246_Oberen_Grenzwert_verstellen.svg")
+addIcon(regular, 3247, "glyphs/DIN3247_Unteren_Grenzwert_verstellen.svg")
+addIcon(regular, 3239, "glyphs/DIN3239_Menue_aufrufen.svg", "Menü aufrufen")
+addIcon(regular, 3269, "glyphs/DIN3269_Mischen.svg")
 addIcon(regular, 3271, "glyphs/DIN3271_Ruecksetzen_in_den_Ausgangszustand.svg", "Rücksetzen in den Ausgangszustand")
+addIcon(regular, 3272, "glyphs/DIN3272_Annullierung_vollstaendig.svg", "Annullierung, vollständig")
 #Page 73
 addIcon(regular, 3328, "glyphs/DIN3328_Elektronische_Berechtigung.svg")
 addIcon(regular, 3330, "glyphs/DIN3330_Information.svg")
